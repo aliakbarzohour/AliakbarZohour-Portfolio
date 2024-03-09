@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  erfandiakoo-frontend:
+    image: erfandiakoo-frontend:1.0.0
+    container_name: erfandiakoo-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
